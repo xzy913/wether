@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天气预报</title>
+    <link rel="stylesheet" href="./TQ1.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="ttop">
+        <div class="xy" id="xy">&lt;</div>
+        <img src="../TQsy/picture/定位-位置.png" />
+        <p id="position">重庆</p>
+      </div>
+      <div>
+        <div class="sy" id="sy">
+          <div class="top">
+            <input
+              class="input"
+              id="input"
+              type="text"
+              placeholder="请输入你想搜索的城市"
+              autocomplete="off"
+            />
+            <img
+              class="img"
+              id="img"
+              src="../TQsy/picture/206搜索.png"
+              onclick="btn()"
+            />
+            <div id="history">
+              <div id="history_ul">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="second" class="second">
+          <div class="temperature"></div>
+          <div class="cloud"></div>
+          <div class="wind"></div>
+          <div class="tip"></div>
+        </div>
+
+        <div class="third" id="life">
+          <table frame="hsides" rules="all" border="1">
+            <tr>
+              <td>
+                <p class="a"></p>
+                <p class="A"></p>
+                <img src="./picture/紫外线.png" />
+              </td>
+              <td>
+                <p class="b"></p>
+                <p class="B"></p>
+                <img src="./picture/汽车.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="c"></p>
+                <p class="C"></p>
+                <img src="./picture/衣服,服装.png" alt="" />
+              </td>
+              <td>
+                <p class="d"></p>
+                <p class="D"></p>
+                <img src="./picture/茶-减肥茶.png" alt="" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="fourth" id="fourth">
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+          <div class="kuang">
+            <div class="rqa"></div>
+            <div class="tqa"></div>
+            <div class="wda"></div>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="div1">
+          <img id="ball1" src="../TQsy/picture/篮球 (2).png">
+          <img id="ball" src="../TQsy/picture/篮球.png" onclick="btna()" />
+          <img id="cloth1" src="../TQsy/picture/紫外线 (1).png">
+          <img id="cloth" src="../TQsy/picture/紫外线.png" />
+          <img id="paper1" src="../TQsy/picture/24gl-paperPlane (1).png" alt="">
+          <img id="paper" src="../TQsy/picture/24gl-paperPlane.png" />
+        </div>
+        <div class="div2">
+          <span id="number">生活指数</span>
+          <span id="today">今日天气</span>
+          <span id="future">未来天气</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./TQ1.js"></script>
+</html>
